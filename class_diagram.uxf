@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>0</y>
+      <w>230</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>/BaseFactory/
+
++createBreakfast(); :: void
+/+addBreakfastBeverage()/ :: void
+/+addBreakfastDish()/ :: void
+/+getBreakfastDescription/
+
++createLunch() :: void
+/+addLunchSoup/ :: void
+/+addLunchMainDish/ :: void
+/+addLunchDessert/ :: void
+/+getLunchDescription/
+
++createSupper() :: void
+/+addSupperStarter/ :: void
+/+addSupperBeverage/ :: void
+/+addSupperMainDish/ :: void
+/+getSupperDescription/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>510</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>PolishFactory
++addBreakfastBeverage() :: void
++addBreakfastDish() :: void
++addLunchSoup() :: void
++addLunchMainDish() :: void
++addLunchDessert() :: void
++addSupperStarter() :: void
++addSupperBeverage() :: void
++addSupperMainDish() :: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>140</y>
+      <w>260</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>AsianFactory
++addBreakfastBeverage() :: void
++addBreakfastDish() :: void
++addLunchSoup() :: void
++addLunchMainDish() :: void
++addLunchDessert() :: void
++addSupperStarter() :: void
++addSupperBeverage() :: void
++addSupperMainDish() :: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>330</y>
+      <w>240</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>AmericanFactory
++addBreakfastBeverage() :: void
++addBreakfastDish() :: void
++addLunchSoup() :: void
++addLunchMainDish() :: void
++addLunchDessert() :: void
++addSupperStarter() :: void
++addSupperBeverage() :: void
++addSupperMainDish() :: void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>120</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Display</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>210</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Observer
+--
++subscribe() : bool
+
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>0</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Observerable
+--
++notifyObserver() : void
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>30</y>
+      <w>270</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>140</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>250</y>
+      <w>30</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>130</y>
+      <w>80</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>250</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>680</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>260.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
