@@ -3,7 +3,7 @@ package pl.edu.agh.to;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract public class Factory implements Observable
+abstract public class Factory implements Observable, Runnable
 {
     private List<Observer> observers;
 
@@ -71,6 +71,15 @@ abstract public class Factory implements Observable
     {
         for (Observer observer : this.observers) {
             observer.update(this, description);
+        }
+    }
+
+    public void run()
+    {
+        while (true) {
+            this.createBreakfast();
+            this.createLunch();
+            this.createSupper();
         }
     }
 }
